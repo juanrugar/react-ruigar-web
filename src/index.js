@@ -1,17 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// #1 Import statements
+import React from "react";
+import ReactDOM from "react-dom";
+import pin from './images/pin.png';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//#2 React components
+const App = () => {
+    return(
+       <div className="ui comments">
+            <div className="comment">
+                <a href="/" className="avatar">
+                    <img src={pin} alt="profile pic" />
+                </a>
+                <div className='content'>
+                    <a href="/" className="author">
+                        Laura
+                    </a>
+                    <div className="metadata">
+                        <span className="date">
+                            Today at 6:00 p.m.
+                        </span>
+                    </div>
+                    <div className="text">
+                        Congrats!
+                    </div>
+                </div>
+            </div>
+       </div>
+    )
+}
+
+// #3 show the component
+ReactDOM.render(
+    <App />, 
+    document.querySelector('#root')
+)
