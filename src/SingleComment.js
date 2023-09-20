@@ -1,16 +1,15 @@
 import React from 'react';
 
-
 const SingleComment = (props) => {
     return (
         <div className="comment">
-                <a href="/" className="avatar">
+            {/*    <a href="/" className="avatar">
                     <img src={props.picture} alt="profile pic" />
-                </a>
+                     </a> */}
                 <div className='content'>
-                    <a href="/" className="author">
+               {/*      <a href="/" className="author">
                         {props.name}
-                    </a>
+                    </a>  */}
                     <div className="metadata">
                         <span className="date">
                         {props.date}
