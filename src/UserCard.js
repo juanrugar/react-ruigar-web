@@ -5,12 +5,12 @@ const UserCard = (props) => {
 
         <div className="ui card">
             <div className="image">
-                <img src={props.picture} />
+                <img src={props.picture} alt="personal avatar"/>
             </div>
             <div className="content">
-                <a className="header">{props.name}</a>
+                <a className="header" href="/">{props.name}</a>
                 <div className="meta">
-                    <span className="date">{props.date}</span>
+                    <span className="date">{props.join}</span>
                 </div>
                 <div className="description">
                     {props.children}
